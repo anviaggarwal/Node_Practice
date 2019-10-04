@@ -1,0 +1,16 @@
+div {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-image: linear-gradient(#008080, #4bbd9c);
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: red;
+}
