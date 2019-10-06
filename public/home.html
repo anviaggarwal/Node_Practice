@@ -6,11 +6,36 @@
 </head>
 
 <body>
-    <div>
-        <h1>This is a heading</h1>
-        <p>This is a paragraph.</p>
+    <div id="container">
+        <div id="card">
+            <img src="logo.png" />
+            <div id="listContainer">
+                <div id="list">
+                    <h3>Temperature</h3>
+                    <div id="value">
+                        <p>34</p>
+                        <p>/C</p>
+                    </div>
+                </div>
+                <div id="list">
+                    <h3>RH Value</h3>
+                    <div id="value">
+                        <p>50</p>
+                        <p>%</p>
+                    </div>
+                </div>
+                <div id="list">
+                    <h3>Occupancy</h3>
+                    <div id="value">
+                        <p>Yes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" onclick="alert('Hello world!')">
+            <p id="buttonText">Update</p>
+        </button>
     </div>
-
 </body>
 
 </html>

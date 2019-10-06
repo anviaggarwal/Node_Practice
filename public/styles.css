@@ -1,16 +1,98 @@
-div {
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: 4rem;
+    width: 12rem;
+}
+
+#container {
     display: flex;
     flex: 1;
     flex-direction: column;
     background-image: linear-gradient(#008080, #4bbd9c);
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
-h1 {
-    color: blue;
+#card {
+    background-color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 600px;
+    max-height: 350px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    margin: 1.4em;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-p {
-    color: red;
+#listContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-self: stretch;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+#list {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1rem 0rem;
+}
+
+#value {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19), 0 7px 20px 0 rgba(0, 0, 0, 0.19), 0 7px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button {
+    background-color: #008080;
+    display: flex;
+    flex: 1;
+    min-width: 660px;
+    max-height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    margin: 1.4em;
+    border: #008080;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#buttonText {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+    #card {
+        min-width: 00px;
+        align-self: stretch;
+    }
+
+    button {
+        min-width: 300px;
+        align-self: stretch;
+    }
 }
